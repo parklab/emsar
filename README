@@ -1,5 +1,5 @@
 ##############################
-## README for EMSAR v2.0.0    ##
+## README for EMSAR v2.0.0  ##
 ##############################
 
 ## Inquiries can be written to Soo Lee (duplexa@gmail.com).
@@ -22,12 +22,12 @@
 
 1. Installation
 
-      Extract the .tar.gz file. Then, EMSAR.v1.2j directory will be created. 
+      Extract the .tar.gz file. Then, emsar-2.0.0 directory will be created. 
  
-      cd ENSAR.v1.2j
+      cd emsar-2.0.0
       make
 
-      Then, if you want, include your EMSAR.v1.2j directory to your path.
+      Then, if you want, include your emsar-2.0.0 directory to your path.
 
 
 
