@@ -1,0 +1,35 @@
+## Version History ##
+
+Version 1.2j
+* Some critical memory problems with emsar-build when run on PE are now fixed.
+
+Version 1.2i
+* Now emsar-build is available. emsar-build builds the rsh index given a transcriptome fasta and read length (and library type - PE/SE, fragment range, stranded/unstranded).
+* The program name is now emsar, not EMSAR.
+
+Version 1.2h
+* A newly introduced read-length-vs-fragment-length confusion for single-end cases is now fixed.
+
+Version 1.2g
+* The default value for -i is now 200,000.
+* Now the rsh structure can be read from an rsh index file - without a fasta file. Note the change in usage. Either a fasta file is specified with -x or an rsh index file is specified with -I. This can save run time.
+
+Version 1.2e
+* New options -T, -R and -i are introduced.
+* Better memory handling with multi-threading. This fixed some cases with segmentation faults and/or excessively slow performance.
+* Now the transcriptome learning is done before getting alignment counts from samples. (Before the learning was partly done from samples before the full learning from the transcriptome.)
+
+Version 1.2
+* A new option -k (--max_repeat) is introduced (default 100), which specifies the maximum number of alignments per read to be used.
+* The maximum number of loops before deciding a failure of convergence has increased from 1000 to 10000.
+* The (optional) segment file now also provides expected read count for each segment.
+* progress bar is printed only when -v (verbose) option is used. It is highly recommended not to use this option when the standard output is logged.
+
+Version 1.1b
+* We have fixed a critical problem in a single-sample run which was introduced in version 1.1.
+* To avoid rare cases where the MLE does not converge for a long time, it now has a limit on the number of trials.
+
+Version 1.1
+* Multi-sample run is implemented.
+* poly-A removal is depricated.
+

@@ -1,0 +1,15 @@
+COMPILER = gcc
+DFLAGS = 
+CFLAGS = -c
+OFLAGS = -lpthread -lm -lz -o
+
+
+EXECNAME = stringhash_test
+
+stringhash_test:   stringhash.o stringhash_test_main.o
+	${COMPILER} ${DFLAGS} stringhash.o stringhash_test_main.o ${OFLAGS} ${EXECNAME}
+
+stringhash.o:   stringhash.c stringhash.h
+	${COMPILER} ${DFLAGS} ${CFLAGS} stringhash.c
+
+

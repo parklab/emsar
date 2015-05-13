@@ -1,0 +1,105 @@
+Paired-end= y
+strand type= ns
+Max_Fraglen= 400
+Min_Fraglen= 1
+MAX_REPEAT= 100
+bias model= 0 (no bias model)
+positional bias training length= 1000
+positional bias impute training length= 200
+fasta header option= E
+MAX_Thread= 8
+binsize = 5000
+taglen = 2
+print suffix aray = n
+finished reading options and arguments..
+input fastafile name= /n/data1/hms/dbmi/park/sl325/annot/Homo_sapiens.GRCh37.75.mainchr.gtf.fa
+readlength = 101
+reading fasta file... :05/09,17:25:43
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@clarinet001-180.orchestra>
+Subject: Job 8116342: <./emsar-build -P -p 8 /n/data1/hms/dbmi/park/sl325/annot/Homo_sapiens.GRCh37.75.mainchr.gtf.fa 101 /n/data1/hms/dbmi/park/sl325/EMSARtest/ Homo_sapiens.GRCh37.75.mainchr.gtf> Exited
+
+Job <./emsar-build -P -p 8 /n/data1/hms/dbmi/park/sl325/annot/Homo_sapiens.GRCh37.75.mainchr.gtf.fa 101 /n/data1/hms/dbmi/park/sl325/EMSARtest/ Homo_sapiens.GRCh37.75.mainchr.gtf> was submitted from host <balcony.orchestra> by user <sl325> in cluster <hms_orchestra>.
+Job was executed on host(s) <8*clarinet001-180.orchestra>, in queue <i2b2_7d>, as user <sl325> in cluster <hms_orchestra>.
+</home/sl325> was used as the home directory.
+</home/sl325/bin/EMSAR.v1.2j> was used as the working directory.
+Started at Sat May  9 17:25:41 2015
+Results reported at Sat May  9 17:25:47 2015
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+./emsar-build -P -p 8 /n/data1/hms/dbmi/park/sl325/annot/Homo_sapiens.GRCh37.75.mainchr.gtf.fa 101 /n/data1/hms/dbmi/park/sl325/EMSARtest/ Homo_sapiens.GRCh37.75.mainchr.gtf
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time   :      3.95 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <e.log> for stderr output of this job.
+
+Paired-end= y
+strand type= ns
+Max_Fraglen= 400
+Min_Fraglen= 1
+MAX_REPEAT= 100
+bias model= 0 (no bias model)
+positional bias training length= 1000
+positional bias impute training length= 200
+fasta header option= E
+MAX_Thread= 8
+binsize = 5000
+taglen = 2
+print suffix aray = n
+finished reading options and arguments..
+input fastafile name= /n/data1/hms/dbmi/park/sl325/annot/Homo_sapiens.GRCh37.75.mainchr.gtf.fa
+readlength = 101
+reading fasta file... :05/09,17:37:35
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@clarinet000-200.orchestra>
+Subject: Job 8116365: <./emsar-build -P -p 8 /n/data1/hms/dbmi/park/sl325/annot/Homo_sapiens.GRCh37.75.mainchr.gtf.fa 101 /n/data1/hms/dbmi/park/sl325/EMSARtest/ Homo_sapiens.GRCh37.75.mainchr.gtf> Exited
+
+Job <./emsar-build -P -p 8 /n/data1/hms/dbmi/park/sl325/annot/Homo_sapiens.GRCh37.75.mainchr.gtf.fa 101 /n/data1/hms/dbmi/park/sl325/EMSARtest/ Homo_sapiens.GRCh37.75.mainchr.gtf> was submitted from host <balcony.orchestra> by user <sl325> in cluster <hms_orchestra>.
+Job was executed on host(s) <8*clarinet000-200.orchestra>, in queue <i2b2_7d>, as user <sl325> in cluster <hms_orchestra>.
+</home/sl325> was used as the home directory.
+</home/sl325/bin/EMSAR.v1.2j> was used as the working directory.
+Started at Sat May  9 17:37:35 2015
+Results reported at Sat May  9 17:37:39 2015
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+./emsar-build -P -p 8 /n/data1/hms/dbmi/park/sl325/annot/Homo_sapiens.GRCh37.75.mainchr.gtf.fa 101 /n/data1/hms/dbmi/park/sl325/EMSARtest/ Homo_sapiens.GRCh37.75.mainchr.gtf
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time   :      3.95 sec.
+    Max Memory :         2 MB
+    Max Swap   :        33 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file <e.log> for stderr output of this job.
+
