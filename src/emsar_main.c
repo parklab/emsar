@@ -54,6 +54,7 @@ int main(int argc, char* argv[])
               {"precision",required_argument, 0, 'r'},  /* This is the same as CONVERGENCE_EPSILON_STEPSIZE */
               {"delta",required_argument, 0, 'd'},
               {"max_niter_mle",required_argument, 0, 'i'}, /* maximum number of iteration before determining not converging and reinitializing for MLE */
+              {"max_nloop_mle",required_argument, 0, 'l'}, /* maximum number of loops of iterations before giving up for MLE */
               {"verbose", no_argument, 0, 'v' },
               {"no_verbose", no_argument, 0, 'q' },
               {0,0,0,0}
@@ -87,6 +88,7 @@ int main(int argc, char* argv[])
            CONVERGENCE_EPSILON_STEPSIZE = 1E-15;  /* precision */
            DELTA=0; /* scaling factor for lambda for convenient calculation. */
            MAX_NITER_MLE = 200000;
+           MAX_NLOOP_MLE = 100;
 
            /* some initializations */
            nThread=0;
@@ -95,7 +97,7 @@ int main(int argc, char* argv[])
            /* parsing options */
            while(1){
              option_index=0;
-             c= getopt_long (argc, argv, "vqPs:b:p:h:t:F:f:n:e:r:p:d:gm:MHBSW:w:k:i:TRI:x:", long_options, &option_index);
+             c= getopt_long (argc, argv, "vqPs:b:p:h:t:F:f:n:e:r:p:d:gm:MHBSW:w:k:i:l:TRI:x:", long_options, &option_index);
 
              if(c==-1) break;
              switch(c){
@@ -159,6 +161,10 @@ int main(int argc, char* argv[])
                 case 'i':
                    MAX_NITER_MLE = atoi(optarg);
                    if(MAX_NITER_MLE <= 0 ) { fprintf(stderr, "option -i must be positive.\n"); return(0); }
+                   break;
+                case 'l':
+                   MAX_NLOOP_MLE = atoi(optarg);
+                   if(MAX_NLOOP_MLE <= 0 ) { fprintf(stderr, "option -i must be positive.\n"); return(0); }
                    break;
                 case 'd':
                    DELTA = atoi(optarg);
@@ -234,6 +240,7 @@ int main(int argc, char* argv[])
            if(verbose_flag>0) fprintf(stdout,"CONVERGENCE_EPSILON= %g\n",CONVERGENCE_EPSILON);
            if(verbose_flag>0) fprintf(stdout,"CONVERGENCE_EPSILON_STEPSIZE= %g\n",CONVERGENCE_EPSILON_STEPSIZE);
            if(verbose_flag>0) fprintf(stdout,"MAX_NITER_MLE= %d\n",MAX_NITER_MLE);
+           if(verbose_flag>0) fprintf(stdout,"MAX_NLOOP_MLE= %d\n",MAX_NLOOP_MLE);
            if(verbose_flag>0) fprintf(stdout,"binsize = %d\n",bin);
            if(verbose_flag>0) fprintf(stdout,"taglen = %d\n",taglen);
            if(verbose_flag>0) fprintf(stdout,"print segments = %c\n",print_segments?'y':'n');

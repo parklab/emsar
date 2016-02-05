@@ -20,7 +20,6 @@
 #define LOWEST_NUMBER -1E308 /* for MLE */
 #define NEAR_LOWEST_NUMBER -9.9E307 /* for MLE */
 
-#define MAX_NLOOP_MLE 10000 /* maximum number of loops of iterations before giving up for MLE */
 #define MAX_nALNFILES 1000 /* maximum number of bam files to process in a single multisample run */
 
 
@@ -96,6 +95,7 @@ double EUMAcut;
 int ntid_per_sid; 
 int MAX_REPEAT; /* maximum number of occurrences of the same sequence of length readlength that is counted into EUMA */
 int MAX_NITER_MLE; /* maximum number of iteration before determining not converging and reinitializing for MLE */
+int MAX_NLOOP_MLE; /* maximum number of loops of iterations before giving up for MLE */
 char print_sfa_flag; /* whether to print out suffix array */
 char* sfafile_name;
 

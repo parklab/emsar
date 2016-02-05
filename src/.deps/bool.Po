@@ -1,1 +1,5 @@
-# dummy
+bool.o: bool.c /usr/include/stdc-predef.h bool.h
+
+/usr/include/stdc-predef.h:
+
+bool.h:

@@ -3399,6 +3399,7 @@ void printusage(char* program)
    printf("\t  -e, --epsilon <epsilon> : epsilon value to check convergence of MLE (default : 1E-9)\n");
    printf("\t  -r, --precision <precision> : estimate precision (epsilon for step size) (default : 1E-15)\n");
    printf("\t  -i, --max_niter_mle <max_niter_mle> : maximum number of iteration before determining not converging and reinitializing for MLE (default : 10000)\n");
+   printf("\t  -l, --max_nloop_mle <max_nloop_mle> : maximum number of loops of iterations before giving up for MLE (default: 100)\n");
    printf("\t  -d, --delta <delta> : delta offset for MLE (default : 0)\n");
 }
 
